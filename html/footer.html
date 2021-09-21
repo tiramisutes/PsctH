@@ -1,0 +1,74 @@
+<head>
+    {{ headContent() }}
+</head>
+<hr>
+
+<div class="container">
+    <img src="images/logo_horizontal.png" alt="logo" class="center-block img-responsive" width="60%" style="margin-bottom: 30px;" />
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#"><i class="fa fa-rocket"></i> Back to top</a></p>
+        <p><a href="https://croplab.hzau.edu.cn/" target="_blank">National Key Laboratory of Crop Genetic Improvement</a>, <a href="http://www.hzau.edu.cn/index.htm" target="_blank">Huazhong Agricultural University</a>&mdash;©
+            Copyright 2021-2021.</p>
+        <p>{{textOutput('footerModifiedDay')}}</p>
+        <p><i class="fa fa-file-text" aria-hidden="true"></i> CITE US: Zhongping Xu, Phipson B, Oshlack A. "Plant Single Cell Hub: an online resource to exploring the plant single-cell landscape", Unpublished (2021), DOI: <a href="https://www.scrna-tools.org/" target="_blank">10.1371/journal.pcbi.1006245</a></p>
+        <p><a href="#" data-toggle="modal" data-target="#modal-credits">Credits &amp; Disclaimer</a></p>
+    </footer>
+
+</div>
+
+<!-- Modal - Credits -->
+<div class="modal fade" id="modal-credits" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Credits</h4>
+            </div>
+            <div class="modal-body">
+                <p>This website was built using RShiny.</p>
+                <p>Aside from RShiny, it was built using web development frameworks and other resources. They are attributed here.</p>
+                <p><a href="https://github.com/davatron5000/FitText.js">FitText.js</a></p>
+                <p><a href="http://jquery.com/">jQuery</a></p>
+                <p><a href="http://getbootstrap.com/">Twitter Bootstrap</a></p>
+                <p><a href="http://fontawesome.io/">Font Awesome</a></p>
+                <p>The following R packages were used in to build this RShiny application:</p>
+                <p>
+                    <code>base</code><code>dplyr</code><code>jsonlite</code>
+                    <code>leaflet</code><code>lubridate</code><code>magrittr</code>
+                    <code>padr</code><code>plotly</code><code>purrr</code>
+                    <code>raster</code><code>rgdal</code><code>rgeos</code>
+                    <code>rvest</code><code>selectr</code><code>shiny</code>
+                    <code>shinyjs</code><code>sp</code><code>stringr</code>
+                    <code>tidyr</code><code>urltools</code><code>utils</code>
+                    <code>xml2</code><code>xts</code><code>zoo</code>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<script src="plugins/fittext_1.2/jquery.fittext.js"></script>
+<script src="plugins/fittext.js"></script>
+
+<script type="text/javascript">
+    jQuery(".fit-h1").fitText(1.2, {
+        minFontSize: '32px',
+        maxFontSize: '38px'
+    });
+    jQuery(".fit-h2").fitText(1.2, {
+        minFontSize: '18px',
+        maxFontSize: '26px'
+    });
+    jQuery(".fit-text").fitText(0.8, {
+        minFontSize: '18px',
+        maxFontSize: '24px'
+    });
+</script>

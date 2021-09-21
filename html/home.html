@@ -1,0 +1,111 @@
+<!-- Carousel ================================================== -->
+
+<head>
+    {{ headContent() }}
+</head>
+<div id="myCarousel" class="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/B7-2.png" alt="1" width="5%">
+            <div class="container">
+                <div class="carousel-caption">
+                    <p>
+                        <a class="btn btn-lg btn-primary" onclick="$('li:eq(5) a').tab('show');" role="button">Welcome to Plant Single Cell Hub &raquo;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.carousel -->
+
+<div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="container">
+            <h1 class="fit-head">What we can do?</h1>
+        </div>
+    </div>
+
+    <div class="row app-links">
+        <div class="col-md-4">
+            <img src="images/Workflow.svg" width="50%" alt="novice">
+            <h2 class="headertekst">scRNA-seq Analysis Workflow</h2>
+            <p>You can easy to exploring the plant single-cell landscape step by step!</p>
+            <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">Custom Workflow &raquo;</a>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+            <img src="images/database.svg" width="50%" alt="veteran">
+            <h2 class="headertekst">Marker Genes DataBase</h2>
+            <p>You have invested your money into real estate before, but want to identify new opportunities?</p>
+            <a class="btn btn-primary" onclick="$('li:eq(5) a').tab('show');" role="button">View Database &raquo;</a>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+            <img src="images/literature.svg" width="50%" alt="evaluator">
+            <h2 class="headertekst">Mining Single Cell Literatures</h2>
+            <p>You have identified a few interesting investment opportunities and want to make your final decision?</p>
+            <a class="btn btn-primary" onclick="$('li:eq(8) a').tab('show');" role="button">Seek Inspiration &raquo;</a>
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Statistic The Species -->
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="container">
+            <h1 class="text-center fit-h1" style="font-size: 4em; margin-bottom: 10px;">Four Species</h1>
+        </div>
+    </div>
+    <div class="row featurette center-on-xs">
+        <div class="row">
+            <div class="col-sm-3">
+                <p style="text-align: center;"><img src="images/arabidopsis.png" width="50%" alt="evaluator"></p>
+                <h3 style="text-align: center;"><i>A. thaliana</i></h3>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-align: center;"><img src="images/maize.png" width="50%" alt="evaluator"></p>
+                <h3 style="text-align: center;"><i>Z. mays</i></h3>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-align: center;"><img src="images/rice.png" width="50%" alt="evaluator"></p>
+                <h3 style="text-align: center;"><i>O. sativa</i></h3>
+            </div>
+            <div class="col-sm-3">
+                <p style="text-align: center;"><img src="images/tomato.png" width="50%" alt="evaluator"></p>
+                <h3 style="text-align: center;"><i>S. lycopersicum</i></h3>
+            </div>
+        </div>
+    </div>
+    <!-- Statistic The Tissues and Cell Types-->
+    <hr class="featurette-divider">
+    <div class="row featurette center-on-xs">
+        <div class="row">
+            <div class="col-sm-6">
+                {{plotlyOutput("speciesTissuesStat") }}
+                <h4 style="text-align: center; margin-top: 50px;">{{textOutput('totalTissues')}}</h4>
+            </div>
+            <div class="col-sm-6">
+                {{plotlyOutput("cellTypesStat") }}
+                <h4 style="text-align: center; margin-top: 50px;">{{textOutput('totalCellTypes')}}</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Statistic the marker genes -->
+    <hr class="featurette-divider">
+    <div class="row featurette center-on-xs">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 style="text-align: center;">{{textOutput('totalMarkerGenes')}}</h4>
+                {{plotlyOutput("markerGenesStat") }}
+                <h4 style="margin-bottom: 400px;"></h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /END THE FEATURETTES -->

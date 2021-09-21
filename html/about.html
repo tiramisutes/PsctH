@@ -1,0 +1,259 @@
+<div class="container">
+    <!-- <h1 class="title fit-h1">Help</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <img id="logo-image" class="hidden-sm hidden-xs" src="images/PlantSingleCellHub.png" width="100%" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">What can we do?</h1>
+        </div>
+    </div>
+    <div class="marketing">
+        <div class="row">
+            <div class="col-md-4">
+                <a onclick="$('li:eq(3) a').tab('show');"><img id="logo-image" class="hidden-sm hidden-xs" src="images/PlantscRNADataBase.png" /></a>
+                <br />
+                <p></p>
+                <p>We are provided a workflow to analyze plants Single cell RNA-seq data, which includes quality control based on <b>raw_nCount_RNA, raw_nFeature_RNA, Mitochondria Genes and Chloroplast Genes</b>.</p>
+                <a onclick="$('li:eq(3) a').tab('show');">VIEW WORKFLOW</a>
+            </div>
+            <div class="col-md-4">
+                <a onclick="$('li:eq(5) a').tab('show');"><img id="logo-image" class="hidden-sm hidden-xs" src="images/MarkerGeneDB.png" /></a>
+                <br />
+                <p></p>
+                <p>We are provided a plant marker genes database that all genes have been evidenced via <b>RNA in situ hybridization or GFP reporter</b>.</p>
+                <a onclick="$('li:eq(5) a').tab('show');">VIEW DATABASE</a>
+            </div>
+            <div class="col-md-4">
+                <a onclick="$('li:eq(8) a').tab('show');"><img id="logo-image" class="hidden-sm hidden-xs" src="images/scRNALiteratures.png" /></a>
+                <br />
+                <p></p>
+                <p>We are providing an interface that can more convenient to get the literature of plant single cell and uses <b>natural language processing (NLP)</b> to try mine the new information or help answer specific research questions.</p>
+                <a onclick="$('li:eq(8) a').tab('show');">VIEW LITERATURES</a>
+            </div>
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">How to prepare input data for workflow?</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">How to prepare input data for workflow?</h1>
+            <blockquote>
+                <p class="text-danger">The gene id should be have same format in follows files. Especially for Cell Ranger Count Matrix.</p>
+            </blockquote>
+            <h4>1. Cell Ranger Count Data</h4>
+            <p>The <b>filtered_feature_bc_matrix</b> need input into analysis workflow can be count follows <code>cellranger mkref</code> and <code>cellranger count</code>. More detail can be find in <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_ct"
+                    target="_blank">Running cellranger count</a>.</p>
+            <h4>2. Samples Metadata</h4>
+            <p>A comma separated <code>csv</code> format file that used to describe the information of samples. It's should been have the header: <code>library_id, molecule_h5, batch, AMLStatus and condition</code>.</p>
+            <p>A example file can be found here: <a href="data/Sample_MetaData.csv" target="_blank">Sample_MetaData.csv</a></p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>library_id</th>
+                        <th>molecule_h5</th>
+                        <th>batch</th>
+                        <th>AMLStatus</th>
+                        <th>condition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T0_1</td>
+                        <td>Cell_Ranger/T0_1/outs/molecule_info.h5</td>
+                        <td>v3_lib</td>
+                        <td>T0</td>
+                        <td>treatment</td>
+                    </tr>
+                    <tr>
+                        <td>T0_2</td>
+                        <td>Cell_Ranger/T0_2/outs/molecule_info.h5</td>
+                        <td>v3_lib</td>
+                        <td>T0</td>
+                        <td>treatment</td>
+                    </tr>
+                    <tr>
+                        <td>T1_1</td>
+                        <td>Cell_Ranger/T1_1/outs/molecule_info.h5</td>
+                        <td>v3_lib</td>
+                        <td>T1</td>
+                        <td>control</td>
+                    </tr>
+                    <tr>
+                        <td>T1_2</td>
+                        <td>Cell_Ranger/T1_2/outs/molecule_info.h5</td>
+                        <td>v3_lib</td>
+                        <td>T1</td>
+                        <td>control</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>3. Genes Annotation File</h4>
+            <p>A tab separated <code>txt</code> format file that includes the annotation of gene function. It's should be no header.</p>
+            <p>A example file can be found here: <a href="data/Genome_Genes_Function_Annotation.txt" target="_blank">Genome_Genes_Function_Annotation.txt</a></p>
+            <table class="table table-bordered table-striped">
+                <tbody>
+                    <tr>
+                        <td>Ghir-A01G000050</td>
+                        <td>AT4G21192.1</td>
+                        <td>3.00E-44</td>
+                        <td>Symbols: | Cytochrome c oxidase biogenesis protein Cmc1-like | chr4:11294563-11295192 FORWARD LENGTH=80</td>
+                    </tr>
+                    <tr>
+                        <td>Ghir-A01G000040</td>
+                        <td>AT1G64260.1</td>
+                        <td>2.00E-39</td>
+                        <td>Symbols: | MuDR family transposase | chr1:23847756-23849915 FORWARD LENGTH=719</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>4. Mitochondria Genes</h4>
+            <p>A <code>csv</code> format file that includes the mitochondria genes. It's should have the header: <code>gene_id</code>.</p>
+            <p>A example file can be found here: <a href="data/MitochondriaGenes.csv" target="_blank">MitochondriaGenes.csv</a></p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>gene_id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ghir-D13G022910</td>
+                    </tr>
+                    <tr>
+                        <td>Ghir-D09G012400</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>5. Chloroplast Genes</h4>
+            <p>A <code>csv</code> format file that includes the chloroplast genes. It's should have the header: <code>gene_id</code>.</p>
+            <p>A example file can be found here: <a href="data/ChloroplastGenes.csv" target="_blank">ChloroplastGenes.csv</a></p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>gene_id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ghir-D08G003430</td>
+                    </tr>
+                    <tr>
+                        <td>Ghir-A05G030920</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4>6. Marker Genes Of Known Cell-Type</h4>
+            <p>A comma separated <code>csv</code> format file that includes the marker genes and cell annotation. It's should have the header: <code>name, parent and genes</code>.</p>
+            <p>Multiple marker genes for a cell cluster should be list in different row.</p>
+            <p>A example file can be found here: <a href="data/Maker_SC.csv" target="_blank">Maker_SC.csv</a></p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>parent</th>
+                        <th>genes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>cortex</td>
+                        <td>cortex</td>
+                        <td>Ghir-A03G023470</td>
+                    </tr>
+                    <tr>
+                        <td>cortex</td>
+                        <td>cortex</td>
+                        <td>Ghir-A03G023570</td>
+                    </tr>
+                    <tr>
+                        <td>metaphloem sieve element</td>
+                        <td>phloem</td>
+                        <td>Ghir-A05G017430</td>
+                    </tr>
+                    <tr>
+                        <td>metaxylem</td>
+                        <td>xylem</td>
+                        <td>Ghir-A02G012540</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">How to run workflow?</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">How to run workflow?</h1>
+            <p>We are provides a Single Cell Conda Environment and R Session Infomation: <a href="data/SingleCellCondaEnvironment.yml" target="_blank">SingleCellCondaEnvironment.yml</a> and <a href="data/RsessionInfo.txt" target="_blank">RsessionInfo.txt</a>.</p>
+            <p>You can easily configure an environment used to run this workflow.👇</p>
+            <pre>conda env update --file SingleCellCondaEnvironment.yml --prune</pre>
+            <blockquote>
+                <p class="text-danger">Firstly, you should have a conda environment. If not, please <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html" target="_blank">install</a> it.</p>
+            </blockquote>
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">Why not provide online scRNA analysis services?</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">Why not provide online scRNA analysis services?</h1>
+            <p>We are based on the following two considerations: <b>plants Single cell RNA data is really big data</b> and <b>extreme complexity</b>.</p>
+            <p>We need to combine species information, single cell sample status and the corresponding biological background to adjust the parameters repeatedly.</p>
+            <p>Fixed bioinformatics calculation process can not get ideal results.</p>
+            <p>Therefore, we customize the calculation process and provide download by specifying key parameters. Users can perform multiple analyses on their own servers.</p>
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">How to submit data or facrback question with us?</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">How to submit data or facrback question with us?</h1>
+            <p>Don't be shy.😳{{uiOutput("contactUs") }}</p>
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">Updated History</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">Updated History/Release Information</h1>
+            <blockquote>
+                {{textOutput('aboutModifiedDay')}}
+            </blockquote>
+            <h4>Updated 2021-05-23</h4>
+            <li>We currently track 9 tissues in over 51 cell types of 5 species that total 98 marker genes that have evidenced via RNA <i>in situ</i> hybridization or GFP reporter.</li>
+            <li>15 raw sequencing data of 4 species were curated in <b>Plant Single Cell Database (SingleCellDB)</b> page.</li>
+            <li>We provide a plant scRNA-seq analysis workflow that can result from fastq to marker genes identification.</li>
+            <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+        </div>
+    </div>
+    <!-- <h1 class="title fit-h1">Tools</h1> -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title fit-h1">External Links</h1>
+        </div>
+    </div>
+    <div class="marketing">
+        <div class="row">
+            <div class="col-md-4">
+                <a href='https://www.scrna-tools.org/' target="_blank"><img id="logo-image" class="hidden-sm hidden-xs" alt="scRNA-tools" src="images/scRNA-tools.svg" /></a>
+                <br />
+                <p></p>
+                <p><b>scRNA-tools</b> database is a catalogue of tools for analysing single-cell RNA sequencing data</p>
+                <a href="https://www.scrna-tools.org/" target="_blank">VIEW TOOLS</a>
+            </div>
+            <div class="col-md-4">
+                <a href='http://ibi.zju.edu.cn/plantscrnadb/' target="_blank"><img id="logo-image" class="hidden-sm hidden-xs" alt="PlantscRNAdb" src="images/plantscrnadb.png" /></a>
+                <br />
+                <p></p>
+                <p><b>PlantscRNAdb</b> is a database for plant single-cell RNA analysis (<i>Arabidopsis thaliana</i>, <i>Oryza sativa</i>, <i>Solanum lycopersicum</i> and <i>Zea mays</i>).</p>
+                <a href="http://ibi.zju.edu.cn/plantscrnadb/" target="_blank">VIEW DATABASE</a>
+            </div>
+            <div class="col-md-4">
+                <a href='https://www.ebi.ac.uk/gxa/sc/home' target="_blank"><img id="logo-image" class="hidden-sm hidden-xs" alt="Single Cell Expression Atlas" src="images/ebisc.png" /></a>
+                <br />
+                <p></p>
+                <p><b>Single Cell Expression Atlas</b> is unique in that it provides to the life sciences community uniformly analysed and annotated single cell RNA-Seq data across multiple species</p>
+                <a href="https://www.ebi.ac.uk/gxa/sc/home" target="_blank">VIEW ATLAS</a>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+</div>

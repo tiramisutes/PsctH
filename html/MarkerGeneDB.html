@@ -1,0 +1,29 @@
+<head>
+    <style type="text/css">
+        h3 span {
+            font-size: 22px;
+        }
+        
+        h3 input.search-input {
+            width: 100%;
+            margin-left: auto;
+            float: right
+        }
+        
+        .mycontainer {
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body class="mt32">
+    <div class="mycontainer">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title fit-h1">Marker Gene DataBase (Reviewed)</h1>
+            </div>
+        </div>
+        {{dataTableOutput('markerGenesTableData')}}
+    </div>
+</body>
