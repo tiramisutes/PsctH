@@ -1,0 +1,165 @@
+name,parent,genes
+cortex,cortex,Ghir-A03G023470
+cortex,cortex,Ghir-A11G002630
+cortex,cortex,Ghir-D02G024880
+cortex,cortex,Ghir-D05G026980
+cortex,cortex,Ghir-D07G012460
+cortex,cortex,Ghir-D07G023200
+cortex,cortex,Ghir-D09G022000
+cortex,cortex,Ghir-D10G015900
+cortex,cortex,Ghir-D10G023040
+cortex,cortex,Ghir-D11G002630
+cortex,cortex,Ghir-D11G036850
+cortex,cortex,Ghir-D12G016570
+cortex,cortex,Ghir-D13G011710
+cortex,cortex,Ghir-D13G020150
+endodermis,endodermis,Ghir-A03G001040
+endodermis,endodermis,Ghir-D02G003980
+endodermis,endodermis,Ghir-D02G018200
+endodermis,endodermis,Ghir-D03G018160
+endodermis,endodermis,Ghir-D04G010410
+endodermis,endodermis,Ghir-D06G005240
+endodermis,endodermis,Ghir-D07G002890
+endodermis,endodermis,Ghir-D09G000550
+endodermis,endodermis,Ghir-D09G023320
+endodermis,endodermis,Ghir-D09G025810
+endodermis,endodermis,Ghir-D11G019190
+endodermis,endodermis,Ghir-D11G025230
+endodermis,endodermis,Ghir-D12G013420
+endodermis,endodermis,Ghir-D12G019080
+endodermis,endodermis,Ghir-D13G003570
+endodermis,endodermis,Ghir-D13G016420
+endodermis,endodermis,Ghir-D13G021750
+endodermis,endodermis,Ghir-D13G021970
+epidermis,epidermis,Ghir-A05G014000
+epidermis,epidermis,Ghir-D08G025970
+epidermis,epidermis,Ghir-D09G017210
+epidermis,epidermis,Ghir-D09G022920
+epidermis,epidermis,Ghir-D10G006370
+epidermis,epidermis,Ghir-D10G013090
+epidermis,epidermis,Ghir-D10G013620
+epidermis,epidermis,Ghir-D11G000170
+epidermis,epidermis,Ghir-D11G010620
+epidermis,epidermis,Ghir-D11G036850
+epidermis,epidermis,Ghir-D12G005060
+epidermis,epidermis,Ghir-D12G008490
+epidermis,epidermis,Ghir-D12G013420
+epidermis,epidermis,Ghir-D13G007110
+epidermis,epidermis,Ghir-D13G020960
+epidermis,epidermis,Ghir-D13G022910
+epidermis,epidermis,Ghir-D13G025410
+meristem,meristem,Ghir-A05G041820
+meristem,meristem,Ghir-A07G014670
+meristem,meristem,Ghir-A11G001000
+meristem,meristem,Ghir-A11G013610
+meristem,meristem,Ghir-D02G017280
+meristem,meristem,Ghir-D02G017360
+meristem,meristem,Ghir-D05G006280
+meristem,meristem,Ghir-D05G026280
+meristem,meristem,Ghir-D05G039500
+meristem,meristem,Ghir-D06G011870
+meristem,meristem,Ghir-D07G014960
+meristem,meristem,Ghir-D08G009050
+meristem,meristem,Ghir-D08G026420
+meristem,meristem,Ghir-D08G027150
+meristem,meristem,Ghir-D09G005180
+meristem,meristem,Ghir-D09G007830
+meristem,meristem,Ghir-D09G012390
+meristem,meristem,Ghir-D09G012400
+meristem,meristem,Ghir-D10G020060
+meristem,meristem,Ghir-D11G000170
+meristem,meristem,Ghir-D11G007960
+meristem,meristem,Ghir-D11G019700
+meristem,meristem,Ghir-D11G023690
+meristem,meristem,Ghir-D11G034050
+meristem,meristem,Ghir-D12G000650
+meristem,meristem,Ghir-D12G002850
+meristem,meristem,Ghir-D12G007130
+meristem,meristem,Ghir-D12G012710
+meristem,meristem,Ghir-D12G013280
+meristem,meristem,Ghir-D12G015470
+meristem,meristem,Ghir-D12G016930
+meristem,meristem,Ghir-D12G027740
+meristem,meristem,Ghir-D12G029420
+meristem,meristem,Ghir-D13G010780
+meristem,meristem,Ghir-D13G015470
+metaphloem sieve element,phloem,Ghir-A05G017430
+metaphloem sieve element,phloem,Ghir-A10G001050
+metaphloem sieve element,phloem,Ghir-D05G017240
+metaphloem sieve element,phloem,Ghir-D10G001830
+metaxylem,xylem,Ghir-A02G012540
+metaxylem,xylem,Ghir-A05G000930
+metaxylem,xylem,Ghir-A05G010270
+metaxylem,xylem,Ghir-A07G010150
+metaxylem,xylem,Ghir-A08G000180
+metaxylem,xylem,Ghir-A08G003330
+metaxylem,xylem,Ghir-A09G015060
+metaxylem,xylem,Ghir-A11G025280
+metaxylem,xylem,Ghir-A13G024250
+metaxylem,xylem,Ghir-D03G006330
+metaxylem,xylem,Ghir-D05G001060
+metaxylem,xylem,Ghir-D05G009990
+metaxylem,xylem,Ghir-D07G010170
+metaxylem,xylem,Ghir-D08G000230
+metaxylem,xylem,Ghir-D08G003430
+metaxylem,xylem,Ghir-D09G014030
+metaxylem,xylem,Ghir-D11G025430
+metaxylem,xylem,Ghir-D13G024990
+pericycle,pericycle,Ghir-D01G015820
+pericycle,pericycle,Ghir-D06G005240
+pericycle,pericycle,Ghir-D08G017550
+pericycle,pericycle,Ghir-D09G009040
+pericycle,pericycle,Ghir-D12G008710
+pericycle,pericycle,Ghir-D12G016720
+pericycle,pericycle,Ghir-D13G020150
+phloem,phloem,Ghir-D02G010960
+phloem,phloem,Ghir-D02G018200
+phloem,phloem,Ghir-D06G005240
+phloem,phloem,Ghir-D07G002890
+phloem,phloem,Ghir-D09G000550
+phloem,phloem,Ghir-D09G023320
+phloem,phloem,Ghir-D09G025810
+phloem,phloem,Ghir-D11G005920
+phloem,phloem,Ghir-D12G019080
+phloem,phloem,Ghir-D13G003570
+phloem,phloem,Ghir-D13G016420
+pith,pith,Ghir-D07G002890
+protophloem sieve element,phloem,Ghir-A03G004910
+protophloem sieve element,phloem,Ghir-A05G030920
+protophloem sieve element,phloem,Ghir-A09G016550
+protophloem sieve element,phloem,Ghir-A10G022200
+protophloem sieve element,phloem,Ghir-A13G001890
+protophloem sieve element,phloem,Ghir-A13G009500
+protophloem sieve element,phloem,Ghir-D03G013870
+protophloem sieve element,phloem,Ghir-D05G030830
+protophloem sieve element,phloem,Ghir-D09G016030
+protophloem sieve element,phloem,Ghir-D10G024250
+protophloem sieve element,phloem,Ghir-D13G002150
+protoxylem,xylem,Ghir-D07G002890
+protoxylem,xylem,Ghir-D09G009040
+stele,stele,Ghir-A03G019590
+stele,stele,Ghir-A06G003020
+stele,stele,Ghir-A06G003700
+stele,stele,Ghir-A10G000240
+stele,stele,Ghir-D06G001800
+stele,stele,Ghir-D06G003000
+stele,stele,Ghir-D09G008000
+stele,stele,Ghir-D09G022920
+stele,stele,Ghir-D10G000950
+stele,stele,Ghir-D10G000980
+stele,stele,Ghir-D12G008710
+stele,stele,Ghir-D13G005010
+stele,stele,Ghir-D13G021750
+xylem,xylem,Ghir-A06G006590
+xylem,xylem,Ghir-D02G010960
+xylem,xylem,Ghir-D02G018200
+xylem,xylem,Ghir-D08G016140
+xylem,xylem,Ghir-D09G023320
+xylem,xylem,Ghir-D09G025810
+xylem,xylem,Ghir-D10G025450
+xylem,xylem,Ghir-D11G036340
+xylem,xylem,Ghir-D12G001310
+xylem,xylem,Ghir-D13G003570
+xylem,xylem,Ghir-D13G011710
+xylem,xylem,Ghir-D13G013360
+xylem,xylem,Ghir-Scaffold1571G000010

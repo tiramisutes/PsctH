@@ -1,0 +1,5 @@
+library_id,molecule_h5,batch,AMLStatus,condition
+T0_1,Cell_Ranger/T0_1/outs/molecule_info.h5,v3_lib,T0,treatment
+T0_2,Cell_Ranger/T0_2/outs/molecule_info.h5,v3_lib,T0,treatment
+T1_1,Cell_Ranger/T1_1/outs/molecule_info.h5,v3_lib,T1,control
+T1_2,Cell_Ranger/T1_2/outs/molecule_info.h5,v3_lib,T1,control

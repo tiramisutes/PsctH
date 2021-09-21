@@ -1,0 +1,3 @@
+Ghir_A01G000010.1	AT5G14600.1	7.00E-15	Symbols:  | S-adenosyl-L-methionine-dependent methyltransferases superfamily protein | chr5:4707518-4709022 FORWARD LENGTH=318	
+Ghir_A01G000040.1	AT1G64260.1	2.00E-39	Symbols:  | MuDR family transposase | chr1:23847756-23849915 FORWARD LENGTH=719
+Ghir_A01G000050.1	AT4G21192.1	3.00E-44	Symbols:  | Cytochrome c oxidase biogenesis protein Cmc1-like | chr4:11294563-11295192 FORWARD LENGTH=80
