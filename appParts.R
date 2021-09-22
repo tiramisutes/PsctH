@@ -317,17 +317,6 @@ singleCellDBMenu <- function() {
                     )))
             ),
             hr(),
-            h2(tags$em("Arachis hypogaea"), class = "h2"),
-            fluidRow(
-                column(12, wellPanel(
-                    h2("Shoot Apex", class = "h2"),
-                    p("Expression profiling by high throughput sequencing."),
-                    fluidRow(
-                        column(6, downloadButton('slsa1',"SRP280242",class="butt", href = "https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP280242"),
-                               br(), 
-                               tags$head(tags$style(".butt{background-color:#230682;} .butt{color: #e6ebef;}")))
-                    )))
-            )
         )
     )
 }
