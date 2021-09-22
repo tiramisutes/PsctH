@@ -285,26 +285,6 @@ singleCellDBMenu <- function() {
                     )))
             ),
             hr(),
-            h2(tags$em("Gossypium hirsutum"), class = "h2"),
-            fluidRow(
-                column(6, wellPanel(
-                    h2("Hypocotyl", class = "h2"),
-                    p("Expression profiling by high throughput sequencing."),
-                    fluidRow(
-                        column(6, downloadButton('ghh1',"GSE161482",class="butt", href = "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE161482"),
-                               br(), 
-                               tags$head(tags$style(".butt{background-color:#230682;} .butt{color: #e6ebef;}")))
-                    ))),
-                column(6, wellPanel(
-                    h2("Ovule", class = "h2"),
-                    p("Expression profiling by high throughput sequencing."),
-                    fluidRow(
-                        column(6, downloadButton('gho1',"SRP160651",class="butt", href = "https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP160651"),
-                               br(), 
-                               tags$head(tags$style(".butt{background-color:#230682;} .butt{color: #e6ebef;}")))
-                    )))
-            ),
-            hr(),
             h2(tags$em("Solanum lycopersicum"), class = "h2"),
             fluidRow(
                 column(12, wellPanel(
